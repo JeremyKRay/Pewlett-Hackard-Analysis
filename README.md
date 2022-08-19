@@ -12,7 +12,7 @@ The purpose of this analysis was to assist Pewlett Hackard in preparing for what
 #### Deliverable 1
 For Deliverable 1, an Entity Relationship Diagram was created using a free online tool called Quick Database Diagrams (DBD). The ERD can be seen below.
 
-(https://github.com/JeremyKRay/Pewlett-Hackard-Analysis/blob/71e51fd28714d4b38ef1194a88ef13463d937097/EmployeeDB.png)
+![Image Link](https://github.com/JeremyKRay/Pewlett-Hackard-Analysis/blob/71e51fd28714d4b38ef1194a88ef13463d937097/EmployeeDB.png)
 
 A table was created in pgAdmin using SQL and records of all of the employees and their titles that are reaching retirement age were inserted. This required a join of the Pewlett Hackard Employees table and the Pewlett Hackard Titles table. The resulting, Retirement_Titles table, can be viewed by clicking on the following link
 

@@ -2,6 +2,13 @@
 ## Overview of the Analysis
 ### Purpose
 The purpose of this analysis was to assist Pewlett Hackard in preparing for what is being dubbed the "silver tsunami", a large incoming wave of retiring employees. To do this, multiple tables containing employee and department title data are examined using SQL to determine the number of employees reaching retiring age and their titles. In addition, since these numbers are quite large, the same data is analyzed to identify employees who may be eligible to participate in a mentorship program to train incoming employees. This task is presented as two deliverbles: 1) The number of retiring employees by title and 2) A list of employees eligible for the Mentorship Program. 
+
+### Technology Used
+
+![download](https://user-images.githubusercontent.com/98500639/185662999-a883e68c-46ea-4f54-97b1-212c7c24f39e.jpg)
+![download](https://user-images.githubusercontent.com/98500639/185663046-ef0ccb07-57b3-4565-bbd8-8ca2b844aa05.png)
+
+
 #### Deliverable 1
 For Deliverable 1, a table was created and records were inserted of all of the employees and their titles that are reaching retirement age. This required a join of the Pewlett Hackard Employees table and the Pewlett Hackard Titles table. The resulting, Retirement_Titles table, can be viewed by clicking on the following link [Retirement_Titles](Data/retirement_titles.csv). As you can see, there are several employees, each with a unique emp_no, that are duplicated because they have held more than one title since being hired. This skews our results as we are really only concerned about what the retiring employee's current title is. To determine this, a second table was created, unique_titles, that used the SQL Distinct ON and Order By functions to order the employees by their unique emp_no and their to_date. A to_date of '9999-01-01' means that the employee is still employed under that particular title and this is the record that is selected. The unique_titles table can be viewed by clicking the following link [Unique_Titles](Data/unique_titles.csv). Finally, a count was done on this table clearly showing the number of employees retiring from their current position or title. This can be seen in the retiring_titles table by clicking the following link [Retiring_Titles](Data/retiring_titles.csv). 
 #### Deliverable 2
